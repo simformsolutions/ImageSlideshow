@@ -43,7 +43,8 @@ public class AlamofireSource: NSObject, InputSource {
             self.placeholder = placeholder
             super.init()
         } else {
-            return nil
+            self.url = URL(string: defaultUrl)!
+            super.init()
         }
     }
 
